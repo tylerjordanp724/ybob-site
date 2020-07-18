@@ -8484,19 +8484,6 @@
 		"oS": 3,
 		"sct": 1
 		},
-	"/wp-content/themes/ybob/src/scss/_colors.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/wp-content/themes/ybob/css/styles.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 1
-		},
 	"/wp-content/themes/ybob/src/scss/_components.scss": {
 		"aP": 1,
 		"bl": 0,
