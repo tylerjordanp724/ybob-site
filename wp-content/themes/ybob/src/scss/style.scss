@@ -1,15 +1,18 @@
 // Partials go here
-@import '_breakpoints';
-@import '_buttons';
-@import '_components';
 @import '_default';
-@import '_fonts';
-@import '_keyframes';
+@import '_variables';
 @import '_mixins';
-@import '_modules';
-@import '_plugins';
-@import '_typography';
 @import '_utilities';
+
+@import '_fonts';
+@import '_typography';
+@import '_buttons';
+@import '_modules';
+@import '_components';
 @import '_header';
 @import '_footer';
-@import '_variables';
+@import '_plugins';
+@import '_keyframes';
+
+
+
