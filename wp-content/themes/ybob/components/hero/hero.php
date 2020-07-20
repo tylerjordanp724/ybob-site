@@ -8,11 +8,13 @@
 ?>
 
 <div class="hero">
-    <div class="hero-wrapper u-vert-center">
-        <span>phl</span>
-        <h1>Black Owned</h1>
-        <span>businesses</span>
-        <div class="hero-text"></div>
-        <button class="btn">submit a business</button>
+    <div class="hero-wrapper align-vert-center row-y-inside--sm">
+        <div class="hero-inner">
+            <span>phl</span>
+            <h1>Black Owned</h1>
+            <span>businesses</span>
+            <div class="hero-text"></div>
+            <button class="btn">submit a business</button>
+        </div>
     </div>
 </div>
