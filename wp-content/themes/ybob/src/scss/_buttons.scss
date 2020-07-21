@@ -11,4 +11,11 @@ button.btn {
     border: 1px solid $white;
     border-radius: 50px;
     color: $white;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $white;
+        color: $dark1;
+    }
 }
