@@ -1,8 +1,19 @@
+// Alignments
 .align-vert-center {
     display: flex;
     align-items: center;
 }
 
+// Padding & Spacing
 .row-y-inside--sm {
     padding: 30px 0;
+}
+
+// Text 
+.text--white {
+    color: $white;
+}
+
+.text-align--center {
+    text-align: center;
 }
