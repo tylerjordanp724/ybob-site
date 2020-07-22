@@ -1,3 +1,18 @@
+.screen-reader {
+    display: none;
+}
+
+// Containers
+.container--sm {
+    margin: auto;
+    max-width: 800px;
+}
+
+.container--md {
+    margin: auto;
+    max-width: 1024px;
+}
+
 // Alignments
 .align-vert-center {
     display: flex;
@@ -5,13 +20,22 @@
 }
 
 // Padding & Spacing
-.row-y-inside--sm {
+.row-inside--sm {
     padding: 30px 0;
 }
 
 .row-btm-outside--sm {
-    padding-bottom: 30px;
+    margin-bottom: 15px;
 }
+
+.row-btm-outside--md {
+    margin-bottom: 30px;
+}
+
+.col-inside--md {
+    padding: 0 30px;
+}
+
 
 // Text 
 .text--white {

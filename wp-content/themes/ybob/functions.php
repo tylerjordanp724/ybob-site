@@ -218,7 +218,17 @@ function ybob_org() {
 }
 add_action( 'init', 'ybob_org', 0 );
 
-
+if(function_exists('acf_add_options_page')) {
+	acf_add_options_page(
+		array(
+			'page_title' 	=> 'Front Page Fields',
+			'menu_title'	=> 'Front Page Fields',
+			'menu_slug' 	=> 'front-page-fields',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		)
+	);
+}
 
 /**
  * Implement the Custom Header feature.
