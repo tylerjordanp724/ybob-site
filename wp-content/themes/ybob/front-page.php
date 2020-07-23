@@ -15,14 +15,14 @@ get_header();
         $orgs = new WP_Query($args);
     ?>
     <?php if($orgs->have_posts()):?>
-        <div class="orgs container--lg grid-flex grid-flex--md">
+        <div class="orgs container--lg grid-flex grid-flex--sm">
             <?php while($orgs->have_posts()): $orgs->the_post();
                 $org_title = get_field('display_title');
                 $org_desc = get_field('description');
                 $org_link = get_field('website_link');
                 $org_category = get_the_category();
             ?>
-               <div class="card card--border-top col col-4 row-btm-outside--sm text--white">
+               <div class="card card--border-top col col-sm-6 col-md-4 row-btm-outside--sm text--white">
                     <div class="card-inner row-inside--sm">
                         <?php if(!empty($org_category)):?>
                             <span class="f-label f-label--sm"><?php echo $org_category[0]->cat_name;?></span>    

@@ -3,6 +3,14 @@
     display: block;
     padding: 0 15px;
 
+    &--sm {
+        @include breakFirst($screen-sm) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+
     &--md {
         @include breakFirst($screen-md) {
             display: flex;
@@ -17,10 +25,30 @@
     padding: 0 15px;
 
     &-4 {
-        @include breakFirst($screen-md) {
+        width: 30%;
+    }
+
+    &-6 {
+
+        width: 46%;
+    }
+    
+}
+
+.col-sm {
+    @include breakFirst($screen-sm) {
+        &-6 {
+            width: 46%;
+        }        
+    }
+
+}
+
+.col-md {
+    @include breakFirst($screen-md) {
+        &-4 {
             width: 30%;
         }
     }
-    
 }
 
