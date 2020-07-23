@@ -3,10 +3,18 @@
 }
 
 // Containers
-.container--sm {
-    margin: auto;
-    max-width: 800px;
+.container {
+    &--sm {
+        margin: auto;
+        max-width: 800px;
+    }
+
+    &--lg {
+        margin: auto;
+        max-width: 1180px;
+    }
 }
+
 
 .container--md {
     margin: auto;

@@ -1,0 +1,25 @@
+.grid-flex {
+    max-width: 100%;
+    display: block;
+    padding: 0 15px;
+
+    &--md {
+        @include breakFirst($screen-md) {
+            display: flex;
+        }
+    }
+   
+}
+
+.col {
+    max-width: 100%;
+    padding: 0 15px;
+
+    &-4 {
+        @include breakFirst($screen-md) {
+            width: 33.33%;
+        }
+    }
+    
+}
+
