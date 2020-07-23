@@ -1,3 +1,52 @@
 .hero .hero-inner--center {
     margin: 0 auto;
 }
+
+.card {
+    h3, p, a, span{
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    a {
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    a span.underline {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $white;
+        position: relative;
+        top: 8px;
+        transform-origin: right;
+        transform: translateX(0);
+        transition: transform 0.5s ease;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $white;
+            position: relative;
+            transform: translateX(-300%);
+            transition: transform 0.5s ease;
+        }
+
+        
+    }
+
+    a:hover span.underline {
+        transform: translateX(100%);
+
+        &:before {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+.card--border-top .card-inner {
+    border-top: 1px solid $white;
+}
