@@ -10,7 +10,6 @@ get_header();
 <!-- orgs go here -->
     
     <?php get_template_part('components/orgs/orgs');?>
-
    
 </div>
 <?php get_footer();?>
