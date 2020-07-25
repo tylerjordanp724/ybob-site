@@ -13,6 +13,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     padding: 0;
 }
 
+p, span {
+    font-family: $fontFamily;
+    @include font-size(16);
+    @include line-height(22);
+}
+
 a {
     text-decoration: none;
+    font-family: $fontFamily;
 }

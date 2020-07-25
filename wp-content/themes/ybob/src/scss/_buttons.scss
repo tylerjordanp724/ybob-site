@@ -2,7 +2,8 @@ button {
     appearance: none;
     border: 0;
     outline: 0;
-    cursor: pointer; 
+    cursor: pointer;
+    font-family: $fontFamily; 
 }
 
 button.btn {

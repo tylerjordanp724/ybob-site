@@ -35,7 +35,7 @@ get_header();
                         <?php endif;?>
                         <?php if(!empty($org_link)):?>
                             <a href="<?php echo $org_link;?>" class="card-link text--white">
-                                website
+                                Website
                                 <span class="underline"></span>
                             </a>
                         <?php endif;?>

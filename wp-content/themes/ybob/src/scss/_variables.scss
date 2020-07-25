@@ -10,6 +10,19 @@ $blue1: #0FC5FF;
 $blue2: #7FA6B2;
 $blue3: #D9ECF2;
 
+// Typography
+$serifFontFamily: 'Cormorant Upright', serif !default;
+$fontFamily: 'Red Hat Display', sans-serif !default;
+
+$baseFontSize: 18px !default;
+$baseFontFamily: $fontFamily !default;
+$baseLineHeight: 1.4 !default;
+$baseMargin: 24px;
+
+$headingsFontFamily: $serifFontFamily !default;
+$headingsFontWeight: 300 !default;
+$headingsColor: inherit !default;
+
 // Breakpoints
 // Extra extra small screen / phone
 $screen-xxs:                 321px !default;

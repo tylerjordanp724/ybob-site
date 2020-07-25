@@ -1,8 +1,31 @@
+h1, h2 {
+    font-family: $headingsFontFamily;
+}
+
+h1 {
+    @include font-size(70);
+    font-weight: 300;
+    color: $blue3;
+}
+
+h2 {
+    @include font-size(40);
+}
+
+h3 {
+    @include font-size(24);
+    font-weight: 400;
+}
+
+h3, h4, h5, h6 {
+    font-family: $fontFamily;
+}
+
 .f-label {
     text-transform: uppercase;
 
     &--sm {
-        @include font-size(14);
+        @include font-size(12);
     }
 }
 
