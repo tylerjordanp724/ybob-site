@@ -6,7 +6,6 @@
  */
 get_header();
 ?>
-<?php get_template_part('components/hero/hero');?>
 <div class="main-content container--lg">
 <!-- orgs go here -->
     

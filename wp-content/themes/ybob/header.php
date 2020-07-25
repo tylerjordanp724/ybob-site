@@ -24,3 +24,4 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="screen-reader" href="#primary"><?php esc_html_e( 'Skip to content', 'ybob-site' ); ?></a>
+	<?php get_template_part('components/hero/hero');?>
