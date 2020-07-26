@@ -1,0 +1,31 @@
+// Search & Filter
+form.searchandfilter {
+    padding: 15px;
+} 
+
+.searchandfilter ul {
+    display: block;
+    width: 100%;
+    padding: 15px;
+
+    @include breakFirst($screen-md) {
+        display: flex;
+
+        li.sf-field-search {
+            margin-right: 30px;
+        }
+    }
+
+    li input.sf-input-text {
+        width: 100%;
+    }
+
+    .selectric-wrapper ul {
+        display: block;
+        padding: 0;
+    }
+
+    .selectric-wrapper ul li {
+        padding: 8px;
+    }
+}

@@ -23,3 +23,18 @@ a {
     text-decoration: none;
     font-family: $fontFamily;
 }
+
+
+// Input
+
+input[type="text"], select {
+    appearance: none;
+    padding: 11.5px;
+    border: 0;
+    border-radius: 6px;
+    background-color: $dark2;
+    color: $dark3;
+    font-family: $fontFamily;
+    width: 100%;
+}
+
