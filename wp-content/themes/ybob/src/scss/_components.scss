@@ -1,7 +1,18 @@
+
+/**
+*** Hero
+=====================
+=====================
+**/
 .hero .hero-inner--center {
     margin: 0 auto;
 }
 
+/**
+*** Cards
+=====================
+=====================
+**/
 .card {
     h3, p, a, span{
         display: block;
@@ -50,3 +61,4 @@
 .card--border-top .card-inner {
     border-top: 1px solid $white;
 }
+

@@ -56,5 +56,7 @@ if($query->have_posts()):?>
         <?php endwhile; wp_reset_postdata();?>
     </div>
 <?php else:?>
-    <h2 class="text-align--center text--white">There are no listings avialble. Please come back later!</h2>
+    <div class="no-results row-inside--md">
+		<h3 class="text-align--center text--white">No results found. Please try again.</h2>
+	</div>
 <?php endif;?>
