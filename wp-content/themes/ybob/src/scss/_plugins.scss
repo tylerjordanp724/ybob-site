@@ -4,16 +4,12 @@ form.searchandfilter {
 } 
 
 .searchandfilter ul {
-    display: block;
+    display: flex;
     width: 100%;
     padding: 15px;
 
-    @include breakFirst($screen-md) {
-        display: flex;
-
-        li.sf-field-search {
-            margin-right: 30px;
-        }
+    li.sf-field-search {
+        margin-right: 30px;
     }
 
     li input.sf-input-text {
