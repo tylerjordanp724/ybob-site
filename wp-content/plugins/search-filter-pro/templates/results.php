@@ -55,6 +55,7 @@ if($query->have_posts()):?>
             </div>
         <?php endwhile; wp_reset_postdata();?>
     </div>
+    
 <?php else:?>
     <div class="no-results row-inside--md">
 		<h3 class="text-align--center text--white">No results found. Please try again.</h2>
