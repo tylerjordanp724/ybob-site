@@ -15,7 +15,7 @@
  	global $wp_query;
  
  	// Add code to index pages.
- 	if( !is_singular() ) {	
+ 	if( is_front_page() ) {	
  		// Queue JS and CSS
  		wp_enqueue_script(
  			'pbd-alp-load-posts',
@@ -45,7 +45,7 @@
  			'pbd_alp',
  			array(
  				'startPage' => $paged,
- 				'maxPages' => $max,
+ 				'maxPages' => 3,
  				'nextLink' => next_posts($max, false)
  			)
  		);

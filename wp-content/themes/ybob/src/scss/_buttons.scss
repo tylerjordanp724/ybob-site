@@ -7,16 +7,21 @@ button {
 }
 
 button.btn {
+    display: block;
     padding: 15px 30px;
     background-color: transparent;
-    border: 1px solid $white;
+    border: 1px solid $blue3;
     border-radius: 50px;
-    color: $white;
+    color: $blue3;
     text-transform: capitalize;
     transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
-        background-color: $white;
+        background-color: $blue3;
         color: $dark1;
     }
+}
+
+.btn--center {
+    margin: auto;
 }

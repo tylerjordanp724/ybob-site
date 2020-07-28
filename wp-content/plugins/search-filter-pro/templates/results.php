@@ -24,8 +24,6 @@
 
 // If this file is called directly, abort.
 
-
-
 if($query->have_posts()):?>
     <div class="orgs container--lg grid-flex grid-flex--sm">
         <?php while($query->have_posts()): $query->the_post();
@@ -53,11 +51,12 @@ if($query->have_posts()):?>
                     <?php endif;?>
                 </div>
             </div>
+            
         <?php endwhile; wp_reset_postdata();?>
-    </div>
+    </div>               
     
 <?php else:?>
     <div class="no-results row-inside--md">
-		<h3 class="text-align--center text--white">No results found. Please try again.</h2>
+		<h3 class="text-align--center text--white">No results found. Please try again.</h3>
 	</div>
 <?php endif;?>

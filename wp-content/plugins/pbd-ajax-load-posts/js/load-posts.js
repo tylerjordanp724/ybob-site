@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 	 */
 	if(pageNum <= max) {
 		// Insert the "More Posts" link.
-		$('.posts-wrap')
+		$('.orgs')
 			.append('<div class="pbd-alp-placeholder-'+ pageNum +'"></div>')
 			.append('<div class="btn center-btn load-more"><a href="#">Load More Posts</a></div>');
  
@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 			// Show that we're working.
 			$(this).text('Loading posts...');
 			
-			$('.pbd-alp-placeholder-'+ pageNum).load(nextLink + ' .posts-wrap .row',
+			$('.pbd-alp-placeholder-'+ pageNum).load(nextLink + ' .orgs',
 				function() {
 					// Update page number and nextLink.
 					pageNum++;

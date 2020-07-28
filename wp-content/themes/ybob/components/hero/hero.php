@@ -20,7 +20,7 @@ $header_text = get_field('header_text', 'option');
                     <?php echo $header_text;?>
                 </div>
             <?php endif;?>
-            <button class="btn">submit a business</button>
+            <button class="btn btn--center">submit a business</button>
         </div>
     </div>
 </div>
