@@ -6,8 +6,10 @@ button {
     font-family: $fontFamily; 
 }
 
-button.btn {
+button.btn, a.btn {
     display: block;
+    width: auto;
+    width: fit-content;
     padding: 15px 30px;
     background-color: transparent;
     border: 1px solid $blue3;

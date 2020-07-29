@@ -32,7 +32,7 @@ if($query->have_posts()):?>
             $org_link = get_field('website_link');
             $org_category = get_the_category();
         ?>
-            <div class="card card--border-top col col-sm-6 col-md-4 row-btm-outside--sm text--white">
+            <div class="card card--border-top col col-sm-6 col-md-4 row-btm-outside--sm text--blue-3">
                 <div class="card-inner row-inside--sm">
                     <?php if(!empty($org_category)):?>
                         <span class="f-label f-label--sm"><?php echo $org_category[0]->cat_name;?></span>    
@@ -44,7 +44,7 @@ if($query->have_posts()):?>
                         <p><?php echo $org_desc;?></p>    
                     <?php endif;?>
                     <?php if(!empty($org_link)):?>
-                        <a href="<?php echo $org_link;?>" class="card-link text--white">
+                        <a href="<?php echo $org_link;?>" class="card-link text--blue-3">
                             Website
                             <span class="underline"></span>
                         </a>

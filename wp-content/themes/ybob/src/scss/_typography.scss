@@ -3,9 +3,13 @@ h1, h2 {
 }
 
 h1 {
-    @include font-size(70);
+    @include font-size(40);
     font-weight: 300;
     color: $blue3;
+
+    @include breakFirst($screen-sm) {
+        @include font-size(70);
+    }
 }
 
 h2 {
