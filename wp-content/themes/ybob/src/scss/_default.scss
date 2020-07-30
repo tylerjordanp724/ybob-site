@@ -33,7 +33,7 @@ a {
 
 // Input
 
-input[type="text"], select {
+input[type="text"], input[type="textarea"], select, textarea {
     appearance: none;
     padding: 11.5px;
     border: 0;
@@ -42,5 +42,10 @@ input[type="text"], select {
     color: $dark3;
     font-family: $fontFamily;
     width: 100%;
+}
+
+.nf-field-label {
+    height: 0;
+    overflow: hidden;
 }
 

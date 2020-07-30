@@ -1,4 +1,4 @@
-button {
+button, input[type="button"] {
     appearance: none;
     border: 0;
     outline: 0;
@@ -6,7 +6,7 @@ button {
     font-family: $fontFamily; 
 }
 
-button.btn, a.btn {
+button.btn, a.btn, input[type="button"] {
     display: block;
     width: auto;
     width: fit-content;

@@ -4,6 +4,8 @@
  * 
  * 
  */
+global $wp;
+$curr_slug = add_query_arg(array(), $wp->request);
 $header_text = get_field('header_text', 'option');
 ?>
 
@@ -20,7 +22,7 @@ $header_text = get_field('header_text', 'option');
                     <?php echo $header_text;?>
                 </div>
             <?php endif;?>
-            <a href="" class="btn btn--center">submit a business</a>
+            <a href="<?php if($curr_slug === ''){echo get_site_url().'/submissions';}elseif($curr_slug === 'submissions'){echo get_option('home');}?>" class="btn btn--center"><?php if($curr_slug === ''){echo 'submit a business';}elseif($curr_slug === 'submissions'){echo '<span class="back-arrow"></span>'.'back to home';}?></a>
         </div>
     </div>
 </div>
