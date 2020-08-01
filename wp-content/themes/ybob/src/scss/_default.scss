@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     height: auto;
+    font-family: $fontFamily;
 }
 
 .main-content {
@@ -28,6 +29,12 @@ p, span {
 a {
     text-decoration: none;
     font-family: $fontFamily;
+    color: $blue3;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $blue1;
+    }
 }
 
 
@@ -42,10 +49,7 @@ input[type="text"], input[type="textarea"], select, textarea {
     color: $dark3;
     font-family: $fontFamily;
     width: 100%;
+    @include font-size(16);
 }
 
-.nf-field-label {
-    height: 0;
-    overflow: hidden;
-}
 

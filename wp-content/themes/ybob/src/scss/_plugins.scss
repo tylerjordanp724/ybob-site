@@ -9,7 +9,7 @@ form.searchandfilter {
     padding: 15px;
 
     li.sf-field-search {
-        margin-right: 30px;
+        margin-left: 15px;
     }
 
     li input.sf-input-text {
@@ -24,4 +24,58 @@ form.searchandfilter {
     .selectric-wrapper ul li {
         padding: 8px;
     }
+}
+
+// Ninja Forms
+
+.nf-form-title h3 {
+    @extend .text-align--center;
+    @extend .f-title--sm;
+    @extend .row-inside--md;
+    font-family: $serifFontFamily !important;
+}
+
+.nf-form-fields-required, .nf-field-label label {
+    font-family: $fontFamily;
+    color: $blue3;
+    padding: 7px;
+    @include font-size(16);
+    font-weight: 300 !important;
+}
+
+.nf-error {
+    input[type="text"],.nf-field-element textarea, select {
+        border: 1px solid $blue3;
+    }
+
+    .nf-error-msg {
+        font-family: $fontFamily;
+        color: $blue3;
+        @include font-size(16);
+    }
+}
+
+.nf-form-fields-required .ninja-forms-req-symbol,
+.nf-field-label label span {
+    font-family: $fontFamily;
+    color: $blue3;
+    @include font-size(16);
+    font-weight: 300 !important;
+}
+
+nf-errors {
+    font-family: $fontFamily;
+    color: $blue3;
+    @include font-size(16);
+}
+
+
+.nf-field-element input[type="button"] {
+    margin: auto;
+}
+
+nf-errors nf-section .nf-error-msg {
+    margin: 0 auto;
+    text-align: center;
+    color: $blue3 !important;
 }

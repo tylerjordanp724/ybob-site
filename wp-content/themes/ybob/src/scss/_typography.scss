@@ -25,14 +25,42 @@ h3, h4, h5, h6 {
     font-family: $fontFamily;
 }
 
+p {
+    font-weight: 300;
+}
+
+.f-body {
+    font-family: $fontFamily;
+    @include font-size(16);
+
+
+    &--sm {
+        @include font-size(14);
+    }
+}
+
 .f-label {
+    @include font-size(14);
     text-transform: uppercase;
+    letter-spacing: 4px;
 
     &--sm {
         @include font-size(12);
+        letter-spacing: 2px;
     }
 }
 
 .f-title {
     text-transform: uppercase;
+
+    &--sm {
+        text-transform: capitalize;
+        color: $blue3;
+        font-weight: 300;
+        @include font-size(30);
+
+        @include breakFirst($screen-sm) {
+            @include font-size(48);
+        }
+    }
 }

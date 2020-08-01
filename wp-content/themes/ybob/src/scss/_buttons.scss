@@ -2,21 +2,22 @@ button, input[type="button"] {
     appearance: none;
     border: 0;
     outline: 0;
-    cursor: pointer;
-    font-family: $fontFamily; 
+    cursor: pointer; 
 }
 
-button.btn, a.btn, input[type="button"] {
+button.btn, a.btn, input[type="button"], .btn {
     display: block;
     width: auto;
     width: fit-content;
-    padding: 15px 30px;
+    padding: 15px 40px;
     background-color: transparent;
     border: 1px solid $blue3;
     border-radius: 50px;
     color: $blue3;
     text-transform: capitalize;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: $fontFamily;
+    @include font-size(16);
 
     &:hover {
         background-color: $blue3;
@@ -26,4 +27,48 @@ button.btn, a.btn, input[type="button"] {
 
 .btn--center {
     margin: auto;
+}
+
+.btn--back-btn {
+    &:before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        width: 8px;
+        height: 8px;
+        border: 1px solid $blue3;
+        border-bottom: 0;
+        border-right: 0;
+        transform: rotate(-45deg);
+        left: -8px;
+        transition: border-color 0.3s ease;
+    }
+
+    &:hover:before {
+        border-color: $dark1;
+    }
+}
+
+.btn--no-border {
+    width: auto;
+    width: fit-content;
+    border: 0;
+    background-color: none;
+    padding: 0;
+    color: $blue3;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    text-transform: capitalize;
+
+    &:hover {
+        color: $blue1;
+    }
+}
+
+.btn--plus:before {
+    content: '+';
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    @include font-size(20);
 }
