@@ -29,6 +29,7 @@ if($query->have_posts()):?>
         <?php while($query->have_posts()): $query->the_post();
             $org_title = get_field('display_title');
             $org_desc = get_field('description');
+            $org_neighborhood = get_field('neighborhood');
             $org_link = get_field('website_link');
             $org_category = get_the_category();
         ?>
@@ -39,6 +40,9 @@ if($query->have_posts()):?>
                     <?php endif;?>
                     <?php if(!empty($org_title)):?>
                         <h3><?php echo $org_title;?></h3>
+                    <?php endif;?>
+                    <?php if(!empty($org_neighborhood)):?>
+                        <span class="f-caption"><?php echo $org_neighborhood;?></span>    
                     <?php endif;?>
                     <?php if(!empty($org_desc)):?>
                         <p><?php echo $org_desc;?></p>    

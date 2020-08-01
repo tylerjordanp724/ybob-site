@@ -50,6 +50,11 @@ p {
     }
 }
 
+.f-caption {
+    @include font-size(14);
+    letter-spacing: 1px;
+}
+
 .f-title {
     text-transform: uppercase;
 
