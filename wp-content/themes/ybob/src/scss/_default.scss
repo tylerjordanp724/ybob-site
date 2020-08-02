@@ -52,4 +52,16 @@ input[type="text"], input[type="textarea"], select, textarea {
     @include font-size(16);
 }
 
+.nf-error input[required] {
+    background-image: url(../css/icons/alert-circle.svg);
+    background-position: 98% center;
+    background-repeat: no-repeat;
+}
+
+.nf-error textarea[required] {
+    background-image: url(../css/icons/alert-circle.svg);
+    background-position: 98% 15px;
+    background-repeat: no-repeat;
+}
+
 
