@@ -61,6 +61,6 @@ if($query->have_posts()):?>
     
 <?php else:?>
     <div class="no-results row-inside--md">
-		<h3 class="text-align--center text--white">No results found. Please try again.</h3>
+		<h3 class="text-align--center text--blue-3 f-title--sm">No results found. Please try again.</h3>
 	</div>
 <?php endif;?>

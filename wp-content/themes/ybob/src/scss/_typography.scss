@@ -57,8 +57,9 @@ p {
 
 .f-title {
     text-transform: uppercase;
-
+    font-family: $serifFontFamily;
     &--sm {
+        font-family: $serifFontFamily;
         text-transform: capitalize;
         color: $blue3;
         font-weight: 300;
