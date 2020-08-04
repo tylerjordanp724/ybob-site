@@ -16,6 +16,7 @@ $header_text = get_field('header_text', 'option');
                 <span class="f-label">phl</span>
                 <h1 class="f-title">Black Owned</h1>
                 <span class="f-label">businesses</span>
+                <a href="<?php echo get_option('home');?>" class="link-whole-area"></a>
             </div>
             <?php if(!empty($header_text)):?>
                 <div class="hero-text col-inside--md row-btm-outside--sm">
