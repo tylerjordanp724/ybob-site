@@ -1,21 +1,37 @@
 // Search & Filter
 form.searchandfilter {
     padding: 15px;
+    display: block;
 } 
 
 .searchandfilter ul {
-    display: flex;
-    width: 100%;
+    display: block;
     padding: 15px;
 
+    label {
+        display: block;
+    }
+
+    li {
+        display: block;
+    }
+
+    @include breakFirst($screen-md) {
+        display: flex;
+    }
+
     li.sf-field-search {
-        margin-left: 15px;
+        margin: auto;
+        @include breakFirst($screen-md) {
+            margin-left: 15px;
+        }
     }
 
     li input.sf-input-text {
-        width: 100%;
+        display: block;
+        width: calc(100% - 22px);
         background-image: url(../css/icons/search.svg);
-        background-position: 95% center;
+        background-position: calc(100% - 15px) center;
         background-repeat: no-repeat;
         background-size: 16px 16px;
         color: $blue3;
@@ -24,6 +40,10 @@ form.searchandfilter {
             background-image: none;
         }
 
+    }
+
+    .selectric {
+        padding: 3px;
     }
 
     .selectric-wrapper ul {
