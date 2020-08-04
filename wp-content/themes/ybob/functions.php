@@ -231,6 +231,19 @@ if(function_exists('acf_add_options_page')) {
 	);
 }
 
+/*
+ * Force URLs in srcset attributes into HTTPS scheme.
+ * This is particularly useful when you're running a Flexible SSL frontend like Cloudflare
+ */
+function ssl_srcset( $sources ) {
+	foreach ( $sources as &$source ) {
+	  $source['url'] = set_url_scheme( $source['url'], 'https' );
+	}
+  
+	return $sources;
+  }
+  add_filter( 'wp_calculate_image_srcset', 'ssl_srcset' );
+
 
 
 /**
