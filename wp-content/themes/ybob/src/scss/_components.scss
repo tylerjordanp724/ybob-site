@@ -11,9 +11,16 @@
 .hero .hero-text p {
     display: block;
     margin-bottom: 24px;
+    font-weight: 700;
+    @include line-height(31);
 }
 .hero .hero-title-row {
     position: relative;
+    padding: 34px 0;
+
+    @include breakFirst($screen-md) {
+        padding: 50px 0;
+    }
 }
 
 /**
@@ -33,6 +40,8 @@
         position: relative;
         transform: translateY(0);
         transition: transform 0.3s ease;
+        @include line-height(28);
+        font-weight: 700;
     }
     
     a {
@@ -42,6 +51,7 @@
         position: relative;
         transform: translateY(0);
         transition: transform 0.3s ease;
+        font-weight: 700;
     }
 
     span.f-caption {
@@ -111,7 +121,12 @@
     }
 }
 
-.card--border-top .card-inner {
-    border-top: 1px solid $blue3;
+.card-inner {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    .card--border-top {
+        border-top: 1px solid $blue3;
+    }
 }
 

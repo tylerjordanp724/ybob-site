@@ -25,7 +25,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin: 0 38px 0 10px;
-    font-size: 12px;
     line-height: 38px;
     color: $blue3;
     height: 38px;
@@ -39,15 +38,13 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 2px;
     width: 38px;
     height: 38px;
     line-height: 38px;
     background-color: transparent;
     color: $blue3;
     text-align: center;
-    font: 0/0 a;
-    *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
 }
   
 .selectric .button:after {
@@ -193,6 +190,7 @@
     padding: 10px;
     color: $blue3;
     cursor: pointer;
+    @include font-size(16);
 }
   
 .selectric-items li.selected {

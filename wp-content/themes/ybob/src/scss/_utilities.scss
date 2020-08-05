@@ -21,7 +21,7 @@
 
     &--lg {
         margin: auto;
-        max-width: 1180px;
+        max-width: 1280px;
     }
 }
 
@@ -70,6 +70,10 @@
 // Text 
 .text--blue-3 {
     color: $blue3;
+}
+
+.text--dark-3 {
+    color: $dark3;
 }
 
 .text-align--center {

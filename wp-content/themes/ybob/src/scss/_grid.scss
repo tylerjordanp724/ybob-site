@@ -29,16 +29,20 @@
 }
 
 .col {
-    max-width: 100%;
-    padding: 0 15px;
+    width: 100%;
+
+    .col-inner {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
     &-4 {
-        width: 30%;
+        width: 33%;
     }
 
     &-6 {
 
-        width: 46%;
+        width: 50%;
     }
     
 }
@@ -46,7 +50,7 @@
 .col-sm {
     @include breakFirst($screen-sm) {
         &-6 {
-            width: 46%;
+            width: 50%;
         }        
     }
 
@@ -55,8 +59,14 @@
 .col-md {
     @include breakFirst($screen-md) {
         &-4 {
-            width: 30%;
+            width: 33%;
+        }
+
+        &-6 {
+            width: 50%;
         }
     }
+
+
 }
 

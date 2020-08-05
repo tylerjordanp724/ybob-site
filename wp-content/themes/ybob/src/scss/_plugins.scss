@@ -2,11 +2,20 @@
 form.searchandfilter {
     padding: 15px;
     display: block;
+    @extend .container--lg;
 } 
+
+.search-filter-results {
+    @extend .container--lg;
+}
 
 .searchandfilter ul {
     display: block;
-    padding: 15px;
+    padding: 15px 25px;
+
+    @include breakFirst($screen-lg) {
+        padding: 15px 40px;
+    }
 
     label {
         display: block;
@@ -22,6 +31,11 @@ form.searchandfilter {
 
     li.sf-field-search {
         margin: auto;
+
+        ::placeholder {
+            color: $blue3;
+        }
+        
         @include breakFirst($screen-md) {
             margin-left: 15px;
         }
