@@ -190,8 +190,8 @@ $selectric-font-size:       12px !default;                                      
   }
 
   .selectric-above & {
-    top: auto;
-    bottom: 100%;
+    top: 0;
+    bottom: 0;
   }
 
   ul, li {
