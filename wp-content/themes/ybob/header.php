@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Uplift The Block is a Philadelphia-based, user-friendly directory list for Black-owned businesses and entrepreneurs near you.">
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/fb-share.jpg" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
