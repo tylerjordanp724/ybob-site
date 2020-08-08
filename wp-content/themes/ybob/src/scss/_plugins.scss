@@ -107,10 +107,14 @@ form.searchandfilter {
     font-weight: 300 !important;
 }
 
-nf-errors {
+nf-errors, .textarea-container .nf-input-limit {
     font-family: $fontFamily;
     color: $blue3;
     @include font-size(16);
+}
+
+.textarea-container .nf-input-limit {
+    text-align: right;
 }
 
 

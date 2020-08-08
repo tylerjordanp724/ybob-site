@@ -42,7 +42,7 @@ $selectric-font-size:       12px !default;                                      
     user-select: none;
     font-family: $fontFamily;
     text-transform: uppercase;
-    color: $darkBlue;
+    color: $blue3;
     font-weight: 500;
   }
 
@@ -70,7 +70,7 @@ $selectric-font-size:       12px !default;                                      
       width: 0;
       height: 0;
       border: 4px solid transparent;
-      border-top-color: $darkBlue;
+      border-top-color: $blue3;
       border-bottom: none;
     }
   }
