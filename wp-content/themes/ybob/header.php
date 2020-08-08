@@ -36,6 +36,17 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92286128-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-92286128-2');
+	</script>
+
+
 	<?php wp_head(); ?>
 </head>
 
