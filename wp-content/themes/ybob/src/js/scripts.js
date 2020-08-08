@@ -1,12 +1,8 @@
 $(document).ready(function(){
-    $('select').selectric({
-        maxHeight: 500
-    });
+    $('select').selectric();
     
     $(this).on("sf:ajaxstart", ".searchandfilter", function(){
-        $('select').selectric({
-            maxHeight: 500
-        });
+        $('select').selectric();
     });
     
 });

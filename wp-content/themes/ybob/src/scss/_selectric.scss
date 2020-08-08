@@ -1,12 +1,12 @@
-$selectric-main-color:      #DDD !default;                                              // Color used in border
-$selectric-secondary-color: #BBB !default;                                              // Color used in button
-$selectric-text-color:      #444 !default;                                              // Color used in label
-$selectric-bg-color:        #F8F8F8 !default;                                           // Background color
-$selectric-btn-bg-color:    #F8f8f8 !default;                                           // Button background color
+$selectric-main-color:      $dark3 !default;                                              // Color used in border
+$selectric-secondary-color: $dark2 !default;                                              // Color used in button
+$selectric-text-color:      $blue3 !default;                                              // Color used in label
+$selectric-bg-color:        $dark2 !default;                                           // Background color
+$selectric-btn-bg-color:    $blue3 !default;                                           // Button background color
 $selectric-height:          40px !default;                                              // Outer height
 $selectric-spacing:         10px !default;                                              // Label left padding
 $selectric-border-width:    1px !default;                                               // Outer border width
-$selectric-border-radius:   0px !default;                                               // Border radius
+$selectric-border-radius:   6px !default;                                               // Border radius
 $selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !default; // Inner height
 $selectric-font-size:       12px !default;                                              // Font size
 
@@ -23,9 +23,9 @@ $selectric-font-size:       12px !default;                                      
 
 .selectric,
 .nf-field-element select {
-  border: 1px solid $selectric-main-color;
+  border: 0;
   border-radius: $selectric-border-radius;
-  background: $white;
+  background: $dark2;
   position: relative;
   overflow: hidden;
   padding: 6px;
@@ -36,12 +36,12 @@ $selectric-font-size:       12px !default;                                      
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0 $selectric-inner-height 0 $selectric-spacing;
-    font-size: 14px;
+    @include font-size(16);
     line-height: $selectric-inner-height;
     height: $selectric-inner-height;
     user-select: none;
     font-family: $fontFamily;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: $blue3;
     font-weight: 500;
   }
@@ -176,13 +176,12 @@ $selectric-font-size:       12px !default;                                      
 .selectric-items {
   display: none;
   width: 100%;
-  position: relative;
+  position: absolute;
   top: 100%;
   left: 0;
   background: $selectric-bg-color;
-  border: 1px solid darken($selectric-main-color, 10%);
   z-index: -1;
-  box-shadow: 0 0 10px -6px;
+//   box-shadow: 0 0 10px -6px;
 
   .selectric-scroll {
     height: 100%;
@@ -190,7 +189,7 @@ $selectric-font-size:       12px !default;                                      
   }
 
   .selectric-above & {
-    top: 0;
+    top: 100%;
     bottom: 0;
   }
 
@@ -198,32 +197,32 @@ $selectric-font-size:       12px !default;                                      
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 14px;
+    @include font-size(16);
     line-height: 1.6;
     min-height: 20px;
     font-family: $fontFamily !important;
-    text-transform: uppercase !important;
+    text-transform: capitalize;
   }
 
   li {
     display: block;
     padding: 10px;
-    color: #666;
+    color: $blue3;
     cursor: pointer;
 
     &.selected {
-      background: #E0E0E0;
-      color: #444;
+      background: $dark2;
+      color: $blue3;
     }
 
     &.highlighted {
-      background: #D0D0D0;
-      color: #444;
+      background: $dark2;
+      color: $blue3;
     }
 
     &:hover {
-      background: #D5D5D5;
-      color: #444;
+      background: $dark3;
+      color: $blue3;
     }
   }
 

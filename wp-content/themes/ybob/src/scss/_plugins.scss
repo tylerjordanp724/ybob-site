@@ -27,6 +27,10 @@ form.searchandfilter {
 
     @include breakFirst($screen-md) {
         display: flex;
+
+        li[data-sf-field-input-type="select"] {
+            width: 200px;
+        }
     }
 
     li.sf-field-search {
@@ -85,6 +89,10 @@ form.searchandfilter {
     padding: 7px;
     @include font-size(16);
     font-weight: 300 !important;
+}
+
+select.ninja-forms-field {
+    padding: 11.5px;
 }
 
 .nf-error {
