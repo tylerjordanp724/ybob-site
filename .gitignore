@@ -25,4 +25,6 @@ yarn-error.log*
 /sql
 /wp-content
 /wp-includes
+/wp-content/plugins/*
+/wp-content/upgrade/*
 wp-config.php
