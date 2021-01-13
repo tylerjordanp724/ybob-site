@@ -25,26 +25,6 @@ form.searchandfilter {
         display: block;
     }
 
-    @include breakFirst($screen-md) {
-        display: flex;
-
-        li[data-sf-field-input-type="select"] {
-            width: 200px;
-        }
-    }
-
-    li.sf-field-search {
-        margin: auto;
-
-        ::placeholder {
-            color: $blue3;
-        }
-        
-        @include breakFirst($screen-md) {
-            margin-left: 15px;
-        }
-    }
-
     li input.sf-input-text {
         display: block;
         width: calc(100% - 22px);
@@ -58,6 +38,30 @@ form.searchandfilter {
             background-image: none;
         }
 
+    }
+
+    @include breakFirst($screen-md) {
+        display: flex;
+
+        li[data-sf-field-input-type="select"] {
+            width: 200px;
+        }
+
+        li input.sf-input-text {
+            width: 380px;
+        }
+    }
+
+    li.sf-field-search {
+        margin: auto;
+
+        ::placeholder {
+            color: $blue3;
+        }
+        
+        @include breakFirst($screen-md) {
+            margin-left: 15px;
+        }
     }
 
     .selectric {
